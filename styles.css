@@ -1,0 +1,140 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: white; /* Fundo branco */
+    margin: 0;
+    padding: 20px;
+    color: black;
+}
+
+header {
+    margin: 20px 0;
+    padding: 10px;
+}
+
+.logo {
+    max-width: 100%; /* Ajusta a logo para caber na tela */
+    height: auto; /* Mantém a proporção */
+}
+
+.logo-credit {
+    font-size: 12px; /* Tamanho da fonte menor */
+    color: black; /* Cor do texto */
+    margin-top: 5px; /* Espaçamento acima do texto */
+}
+
+main {
+    margin: 20px 0;
+}
+
+.slider {
+    position: relative;
+    margin: 20px auto;
+    max-width: 600px;
+    overflow: hidden; /* Evita que imagens excedam o contêiner */
+}
+
+.slider img {
+    width: 100%; /* As imagens ocuparão toda a largura do contêiner */
+    display: none; /* Oculta todas as imagens inicialmente */
+}
+
+.slider img:first-child {
+    display: block; /* Exibe a primeira imagem */
+}
+
+.buttons {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.prev, .next {
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.thumbnail-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.thumbnail {
+    width: 60px; /* Largura dos quadradinhos */
+    height: 60px; /* Altura dos quadradinhos */
+    margin: 0 5px; /* Margem entre os quadrados */
+    cursor: pointer;
+    border: 2px solid transparent; /* Borda padrão */
+    transition: border 0.3s; /* Transição suave */
+}
+
+.thumbnail:hover {
+    border: 2px solid blue; /* Borda ao passar o mouse */
+}
+
+section {
+    padding: 20px;
+    background-color: white; /* Fundo branco */
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    margin-top: 20px;
+    padding: 20px;
+    background: linear-gradient(45deg, rgba(255, 204, 0, 0.8), rgba(0, 86, 179, 0.8), rgba(0, 95, 48, 0.8), rgba(255, 87, 51, 0.8)); /* Gradiente igual ao do fundo */
+    color: white;
+    border-radius: 8px;
+}
+
+footer p {
+    margin-top: 10px;
+    font-size: 14px; /* Tamanho da fonte */
+}
+
+.participate-button {
+    padding: 15px 30px;
+    background: linear-gradient(45deg, blue, yellow);
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background 0.3s;
+    width: 90%; /* Botão ocupará 90% da largura da tela */
+}
+
+.participate-button:hover {
+    background: linear-gradient(45deg, yellow, blue);
+}
+
+/* Estilos responsivos */
+@media (max-width: 600px) {
+    header {
+        padding: 5px; /* Reduz o padding no cabeçalho */
+    }
+
+    .quem-somos-button, .participate-button {
+        font-size: 14px; /* Tamanho de fonte menor em telas pequenas */
+    }
+
+    section {
+        margin: 10px; /* Menor margem nas seções */
+    }
+
+    footer {
+        font-size: 12px; /* Tamanho de fonte menor no rodapé */
+    }
+}

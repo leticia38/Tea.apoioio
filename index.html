@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seu Site</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="fotos/logo2.jpeg" alt="Logo" class="logo">
+    </header>
+
+    <main>
+        <div class="slider">
+            <img src="fotos/Apresentação (1).jpg" alt="Imagem 1">
+            <img src="fotos/Objetivos Projeto.jpg" alt="Imagem 2">
+            <img src="fotos/Convite APOIO (1).jpg" alt="Imagem 3">
+            
+            <div class="buttons">
+                <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+                <button class="next" onclick="changeSlide(1)">&#10095;</button>
+            </div>
+        </div>
+
+        <!-- Novo contêiner para os quadradinhos -->
+        <div class="thumbnail-container">
+            <img class="thumbnail" src="fotos/Apresentação (1).jpg" onclick="setSlide(0)" alt="Thumbnail 1">
+            <img class="thumbnail" src="fotos/Objetivos Projeto.jpg" onclick="setSlide(1)" alt="Thumbnail 2">
+            <img class="thumbnail" src="fotos/Convite APOIO (1).jpg" onclick="setSlide(2)" alt="Thumbnail 3">
+        </div>
+    </main>
+
+    <section id="quem-somos">
+        <h2>Faça parte do nosso Projeto!</h2>
+        <p></p>
+        <a href="https://forms.gle/DyTkZemBoUmvjG827" class="participate-button">Participe</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 @Sirino.VideoMaker - Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
